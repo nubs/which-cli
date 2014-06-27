@@ -18,3 +18,18 @@ This library requires PHP 5.3, or newer.
 ## Installation
 This package uses [composer](https://getcomposer.org) so you can just add
 `nubs\which` as a dependency to your `composer.json` file.
+
+## Usage
+The included `which` executable works much like the standard which utility.  It
+takes an arbitrary number of parameters and outputs the path to each of them.
+
+```bash
+$ ./bin/which more vim foo
+/bin/more
+/usr/bin/vim
+foo not found
+```
+
+The command is configured as a binary with composer, so it is accessible in
+`vendor/bin/which` when you install the package.  For a global install, this
+means that you can find it in `$COMPOSER_HOME/vendor/bin/which`.
