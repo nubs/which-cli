@@ -17,7 +17,8 @@
         "phpunit/phpunit": "~4.0",
         "mikey179/vfsStream": "~1.2",
         "symfony/console": "~2.5",
-        "brianium/habitat": "~1.0"
+        "brianium/habitat": "~1.0",
+        "squizlabs/php_codesniffer": "~1.5"
     },
     "suggest": {
         "brianium/habitat": "For better access to environment variables (e.g., for mocking).",
