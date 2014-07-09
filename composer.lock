@@ -4,8 +4,65 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "1aee5cbc71a4c0eab11b1c122e0cf20a",
+    "hash": "d0b289ce4d9f09b05ba633d342558702",
     "packages": [
+        {
+            "name": "nubs/which",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nubs/which.git",
+                "reference": "ee39ff93980e04a339df089b7f402232c30b4b71"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nubs/which/zipball/ee39ff93980e04a339df089b7f402232c30b4b71",
+                "reference": "ee39ff93980e04a339df089b7f402232c30b4b71",
+                "shasum": ""
+            },
+            "require": {
+                "php": "~5.4"
+            },
+            "require-dev": {
+                "brianium/habitat": "~1.0",
+                "phpunit/phpunit": "~4.0",
+                "squizlabs/php_codesniffer": "~1.5",
+                "symfony/console": "~2.5"
+            },
+            "suggest": {
+                "brianium/habitat": "For better access to environment variables (e.g., for mocking).",
+                "symfony/console": "For the executable which command."
+            },
+            "bin": [
+                "bin/which"
+            ],
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Nubs\\Which\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Spencer Rinehart",
+                    "email": "anubis@overthemonkey.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A library for locating commands in a PATH.",
+            "keywords": [
+                "executable",
+                "linux",
+                "path",
+                "script",
+                "which"
+            ],
+            "time": "2014-07-09 22:46:43"
+        },
         {
             "name": "symfony/console",
             "version": "v2.5.1",
@@ -882,9 +939,9 @@
 
     ],
     "minimum-stability": "stable",
-    "stability-flags": [
-
-    ],
+    "stability-flags": {
+        "nubs/which": 20
+    },
     "platform": {
         "php": "~5.4"
     },

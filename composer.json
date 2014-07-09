@@ -1,7 +1,7 @@
 {
-    "name": "nubs/which",
-    "description": "A library for locating commands in a PATH.",
-    "keywords": ["which", "script", "path", "executable", "linux"],
+    "name": "nubs/which-cli",
+    "description": "A symfony/console command similar to the standard which command.",
+    "keywords": ["which", "script", "path", "executable", "linux", "windows"],
     "authors": [
         {
             "name": "Spencer Rinehart",
@@ -12,6 +12,7 @@
     "license": "MIT",
     "require": {
         "php": "~5.4",
+        "nubs/which": "@dev",
         "symfony/console": "~2.5"
     },
     "require-dev": {
