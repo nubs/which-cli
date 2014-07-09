@@ -1,48 +1,43 @@
-# Which
-A PHP library for locating commands in a PATH.
+# Which CLI
+A PHP symfony/console command similar to the standard which command.
 
-[![Build Status](http://img.shields.io/travis/nubs/which.svg?style=flat)](https://travis-ci.org/nubs/which)
-[![Scrutinizer Code Quality](http://img.shields.io/scrutinizer/g/nubs/which.svg?style=flat)](https://scrutinizer-ci.com/g/nubs/which/)
-[![Code Coverage](http://img.shields.io/scrutinizer/coverage/g/nubs/which.svg?style=flat)](https://scrutinizer-ci.com/g/nubs/which/)
+[![Build Status](http://img.shields.io/travis/nubs/which-cli.svg?style=flat)](https://travis-ci.org/nubs/which-cli)
+[![Scrutinizer Code Quality](http://img.shields.io/scrutinizer/g/nubs/which-cli.svg?style=flat)](https://scrutinizer-ci.com/g/nubs/which-cli/)
+[![Code Coverage](http://img.shields.io/scrutinizer/coverage/g/nubs/which-cli.svg?style=flat)](https://scrutinizer-ci.com/g/nubs/which-cli/)
 
-[![Latest Stable Version](http://img.shields.io/packagist/v/nubs/which.svg?style=flat)](https://packagist.org/packages/nubs/which)
-[![Total Downloads](http://img.shields.io/packagist/dt/nubs/which.svg?style=flat)](https://packagist.org/packages/nubs/which)
-[![License](http://img.shields.io/packagist/l/nubs/which.svg?style=flat)](https://packagist.org/packages/nubs/which)
+[![Latest Stable Version](http://img.shields.io/packagist/v/nubs/which-cli.svg?style=flat)](https://packagist.org/packages/nubs/which-cli)
+[![Total Downloads](http://img.shields.io/packagist/dt/nubs/which-cli.svg?style=flat)](https://packagist.org/packages/nubs/which-cli)
+[![License](http://img.shields.io/packagist/l/nubs/which-cli.svg?style=flat)](https://packagist.org/packages/nubs/which-cli)
 
 [![Dependency Status](https://www.versioneye.com/user/projects/53a01f7b83add749a300001e/badge.svg?style=flat)](https://www.versioneye.com/user/projects/53a01f7b83add749a300001e)
 
 ## Requirements
-This library requires PHP 5.4, or newer.
+This script requires PHP 5.4, or newer.
 
 ## Installation
-This package uses [composer](https://getcomposer.org) so you can just add
-`nubs/which` as a dependency to your `composer.json` file or execute the
-following command:
-
+This package uses [composer](https://getcomposer.org) so you can install it
+using composer.  Composer can install the command globally using:
 ```bash
-composer require nubs/which
+composer global require nubs/which-cli
 ```
 
+This will install it to your `$COMPOSER_HOME` directory (typically
+`$HOME/.composer`).  The `which` binary will be symlinked to
+`$COMPOSER_HOME/vendor/bin/which` (e.g., `$HOME/.composer/vendor/bin/which`).
 
 ## Usage
 The included `which` executable works much like the standard which utility.  It
 takes an arbitrary number of parameters and outputs the path to each of them.
 
 ```bash
-$ ./bin/which more vim foo
+$ which more vim foo
 /bin/more
 /usr/bin/vim
 foo not found
 ```
 
-The command is configured as a binary with composer, so it is accessible in
-`vendor/bin/which` when you install the package.  For a global install, this
-means that you can find it in `$COMPOSER_HOME/vendor/bin/which`.  This command
-does require the symfony/console package to be installed and accessible via the
-autoloader.
-
-For windows users, the preferred installation method is using composer, i.e.
-via `composer global require`.  Composer will create a `which.bat` script in
-its bin directory that can be executed.  Alternatively, a `which.bat` script is
-included.  You may need to add the `bin` directory from this repository to your
-`PATH` environment variable to be able to access the command globally.
+For windows users, composer will create a `which.bat` script in
+its bin directory that can be executed in much the same way as on a POSIX
+system.  Alternatively, a `which.bat` script is included.  You may need to add
+the `bin` directory from this repository to your `PATH` environment variable to
+be able to access the command globally.
