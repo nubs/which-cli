@@ -9,7 +9,7 @@ A PHP symfony/console command similar to the standard which command.
 [![Total Downloads](http://img.shields.io/packagist/dt/nubs/which-cli.svg?style=flat)](https://packagist.org/packages/nubs/which-cli)
 [![License](http://img.shields.io/packagist/l/nubs/which-cli.svg?style=flat)](https://packagist.org/packages/nubs/which-cli)
 
-[![Dependency Status](https://www.versioneye.com/user/projects/53a01f7b83add749a300001e/badge.svg?style=flat)](https://www.versioneye.com/user/projects/53a01f7b83add749a300001e)
+[![Dependency Status](https://www.versioneye.com/user/projects/53bdd76ce1d1583e8200028a/badge.svg?style=flat)](https://www.versioneye.com/user/projects/53bdd76ce1d1583e8200028a)
 
 ## Requirements
 This script requires PHP 5.4, or newer.
