@@ -4,20 +4,20 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "d0b289ce4d9f09b05ba633d342558702",
+    "hash": "632ee092809739e8285f57d57e2d8eb4",
     "packages": [
         {
             "name": "nubs/which",
-            "version": "dev-master",
+            "version": "v1.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nubs/which.git",
-                "reference": "ee39ff93980e04a339df089b7f402232c30b4b71"
+                "reference": "888d271d3776b7d989698b5e045aa269db29c47e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nubs/which/zipball/ee39ff93980e04a339df089b7f402232c30b4b71",
-                "reference": "ee39ff93980e04a339df089b7f402232c30b4b71",
+                "url": "https://api.github.com/repos/nubs/which/zipball/888d271d3776b7d989698b5e045aa269db29c47e",
+                "reference": "888d271d3776b7d989698b5e045aa269db29c47e",
                 "shasum": ""
             },
             "require": {
@@ -26,16 +26,11 @@
             "require-dev": {
                 "brianium/habitat": "~1.0",
                 "phpunit/phpunit": "~4.0",
-                "squizlabs/php_codesniffer": "~1.5",
-                "symfony/console": "~2.5"
+                "squizlabs/php_codesniffer": "~1.5"
             },
             "suggest": {
-                "brianium/habitat": "For better access to environment variables (e.g., for mocking).",
-                "symfony/console": "For the executable which command."
+                "brianium/habitat": "For better access to environment variables (e.g., for mocking)."
             },
-            "bin": [
-                "bin/which"
-            ],
             "type": "library",
             "autoload": {
                 "psr-4": {
@@ -59,9 +54,10 @@
                 "linux",
                 "path",
                 "script",
-                "which"
+                "which",
+                "windows"
             ],
-            "time": "2014-07-09 22:46:43"
+            "time": "2014-07-10 00:07:25"
         },
         {
             "name": "symfony/console",
@@ -939,9 +935,9 @@
 
     ],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "nubs/which": 20
-    },
+    "stability-flags": [
+
+    ],
     "platform": {
         "php": "~5.4"
     },
