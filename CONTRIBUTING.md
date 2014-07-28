@@ -25,12 +25,12 @@ Pull requests will automatically have a build kicked off on [Travis
 CI][travis-ci] and [Scrutinizer CI][scrutinizer-ci].  The results of these
 builds are monitored closely for all pull requests.
 
-[issues]: https://github.com/nubs/which/issues
-[pull-requests]: https://github.com/nubs/which/pulls
-[build-script]: https://github.com/nubs/which/blob/master/build.php
+[issues]: https://github.com/nubs/which-cli/issues
+[pull-requests]: https://github.com/nubs/which-cli/pulls
+[build-script]: https://github.com/nubs/which-cli/blob/master/build.php
 [psr-1]: http://www.php-fig.org/psr/psr-1/ "PSR-1 - Basic Coding Standard"
 [phpunit]: http://phpunit.de/ "PHPUnit - The PHP Testing Framework"
-[travis-ci]: https://travis-ci.org/nubs/which
-[scrutinizer-ci]: https://scrutinizer-ci.com/g/nubs/which/
+[travis-ci]: https://travis-ci.org/nubs/which-cli
+[scrutinizer-ci]: https://scrutinizer-ci.com/g/nubs/which-cli/
 [docker]: https://docker.com/ "Docker - Build, Ship, and Run Any App, Anywhere"
 [fig]: http://www.fig.sh/ "Fig | Fast, isolated development environments using Docker"
