@@ -3,7 +3,7 @@ A PHP symfony/console command similar to the standard which command.
 
 [![Build Status](http://img.shields.io/travis/nubs/which-cli.svg?style=flat)](https://travis-ci.org/nubs/which-cli)
 [![Scrutinizer Code Quality](http://img.shields.io/scrutinizer/g/nubs/which-cli.svg?style=flat)](https://scrutinizer-ci.com/g/nubs/which-cli/)
-[![Code Coverage](http://img.shields.io/scrutinizer/coverage/g/nubs/which-cli.svg?style=flat)](https://scrutinizer-ci.com/g/nubs/which-cli/)
+[![Code Coverage](http://img.shields.io/coveralls/nubs/which-cli.svg?style=flat)](https://coveralls.io/r/nubs/which-cli)
 
 [![Latest Stable Version](http://img.shields.io/packagist/v/nubs/which-cli.svg?style=flat)](https://packagist.org/packages/nubs/which-cli)
 [![Total Downloads](http://img.shields.io/packagist/dt/nubs/which-cli.svg?style=flat)](https://packagist.org/packages/nubs/which-cli)
