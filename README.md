@@ -41,3 +41,7 @@ its bin directory that can be executed in much the same way as on a POSIX
 system.  Alternatively, a `which.bat` script is included.  You may need to add
 the `bin` directory from this repository to your `PATH` environment variable to
 be able to access the command globally.
+
+## License
+which-cli is licensed under the MIT license.  See [LICENSE](LICENSE) for the
+full license text.
