@@ -62,24 +62,4 @@ class WhichApplicationTest extends PHPUnit_Framework_TestCase
         $this->assertSame(0, $this->_applicationTester->getStatusCode());
         $this->assertRegExp('#^/path/to/foo\s*/path/to/bar\s*$#', $this->_applicationTester->getDisplay());
     }
-
-    /**
-     * Verify that a check for a nonexistant command works.
-     *
-     * @test
-     * @covers ::__construct
-     * @covers ::getCommandName
-     * @covers ::getDefaultCommands
-     * @covers ::getDefinition
-     * @covers ::getLocator
-     * @covers \Nubs\Which\Application\WhichCommand
-     */
-    public function nonexistantCommand()
-    {
-        $this->_locator->expects($this->once())->method('locate')->with('foo')->will($this->returnValue(null));
-
-        $this->_applicationTester->run(['commands' => ['foo']]);
-        $this->assertSame(1, $this->_applicationTester->getStatusCode());
-        $this->assertRegExp('#^foo not found\s*$#', $this->_applicationTester->getDisplay());
-    }
 }
