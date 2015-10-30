@@ -12,7 +12,7 @@ A PHP symfony/console command similar to the standard which command.
 [![Dependency Status](https://www.versioneye.com/user/projects/53bdd76ce1d1583e8200028a/badge.svg?style=flat)](https://www.versioneye.com/user/projects/53bdd76ce1d1583e8200028a)
 
 ## Requirements
-This script requires PHP 5.4, or newer.
+This script requires PHP 5.5, or newer.
 
 ## Installation
 This package uses [composer](https://getcomposer.org) so you can install it
