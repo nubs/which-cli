@@ -15,7 +15,7 @@ class WhichApplicationTest extends PHPUnit_Framework_TestCase
 
     public function setUp()
     {
-        $this->_locator = $this->getMockBuilder('\Nubs\Which\Locator')->disableOriginalConstructor()->setMethods(['locate'])->getMock();
+        $this->_locator = $this->createMock('\Nubs\Which\Locator');
 
         $application = new WhichApplication($this->_locator);
         $application->setAutoExit(false);
