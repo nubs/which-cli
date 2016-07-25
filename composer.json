@@ -27,5 +27,8 @@
         "psr-4": {
             "Nubs\\Which\\": "src"
         }
+    },
+    "scripts": {
+      "test": "./build.php"
     }
 }
